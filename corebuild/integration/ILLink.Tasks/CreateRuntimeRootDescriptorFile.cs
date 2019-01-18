@@ -138,7 +138,7 @@ namespace ILLink.Tasks
 			foreach (string def in types) {
 				string [] defElements = null;
 				if (def.StartsWith ("DEFINE_") || def.StartsWith ("// DEFINE_")) {
-					char [] separators = { ',', '(', ')', ' ', '/' };
+					char [] separators = { ',', '(', ')', ' ', '/', '\t' };
 					defElements = def.Split (separators, StringSplitOptions.RemoveEmptyEntries);
 				}
 
